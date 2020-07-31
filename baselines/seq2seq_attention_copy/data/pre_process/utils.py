@@ -6,13 +6,13 @@ import logging
 infiles_data_final = {'train': '../datasets/data_final/train.json',   
                 'dev':'../datasets/data_final/dev.json',
                 'schema': '../datasets/tables.json',
-                'test': '../datasets/data_final/test.json'
+                'test': '../datasets/data_final/dev.json' #TODO
 }
 
 infiles_data_radn_split = {'train': '../datasets/data_radn_split/train_radn.json',   
                            'dev': '../datasets/data_radn_split/dev_radn.json',
                            'schema': '../datasets/tables.json',
-                           'test': '../datasets/data_radn_split/test_radn.json'
+                           'test': '../datasets/data_radn_split/dev_radn.json' #TODO
 }
 
 prefix_data_final = '../datasets/data_final_processed'
