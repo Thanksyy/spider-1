@@ -189,8 +189,9 @@ def sql_key_words():
                "<", ">", "=", "!=", ">=", "<=",
                 "like",
                 "distinct","*",
-                "join", "on", "as", "select", "from"
-               ])
+                "join", "on", "as", "select", "from",
+                "visualize", "bin"
+               ]) # TODO Add Visualization Keywords
     return cnt
 
 
