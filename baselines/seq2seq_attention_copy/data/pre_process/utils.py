@@ -125,14 +125,14 @@ def count_databases(infile_group):
         for table_dict in ex_list:
             content.add(table_dict["db_id"])
     dev_count = len(content)
-    print "the number of dev tables are", dev_count
+    print ("the number of dev tables are", dev_count)
     
     with open(infile_group['train']) as f:
         ex_list = json.load(f)
         for table_dict in ex_list:
             content.add(table_dict["db_id"])
     train_count = len(content) - dev_count
-    print "the number of train tables are",train_count
+    print ("the number of train tables are",train_count)
     
     with open(infile_group['test']) as f: 
         ex_list = json.load(f)
@@ -140,7 +140,7 @@ def count_databases(infile_group):
             db_id = table_dict["db_id"]
             if db_id not in table_dict:
                 content.add(db_id)
-    print "the number of total tables are", len(content)
+    print ("the number of total tables are", len(content))
     return content
 
 
