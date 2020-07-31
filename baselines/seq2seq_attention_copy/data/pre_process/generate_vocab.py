@@ -19,7 +19,7 @@
 """
 Generate vocabulary for a tokenized text file.
 """
-
+#TODO have modified to Python3
 
 import sys
 import argparse
@@ -70,7 +70,7 @@ def get_encode_Query(infile_group, outfile, infile, output=False):
                 
         if output:
             outfile.close()
-    print "max length nl of", infile, "is", max_nl
+    print ("max length nl of", infile, "is", max_nl)
     return cnt
 
 
@@ -88,7 +88,7 @@ def get_mask(infile_group, outfile, infile, vocabfile, output=True):
         for line in vocab:
             items = line.split()
             vocab_ls.append(items[0])
-    print "decode vocab length is", len(vocab_ls)
+    print ("decode vocab length is", len(vocab_ls))
     with open(infile_name) as f:
         ex_list = json.load(f)
         for nl_sql_dict in ex_list:
@@ -143,7 +143,7 @@ def get_decode_SQL(infile_group, outfile, infile, output=False, outputdb=False):
                     outfile.write("{}\t{}\n".format(nl_sql_dict["query"].encode('utf-8').lower().replace("\t", " "), nl_sql_dict["db_id"]))
         if output:
             outfile.close()
-    print "max sql length of", infile, "is", max_sql
+    print ("max sql length of", infile, "is", max_sql)
     return cnt
 
 def get_schema_vocab(infile_group, infile):
