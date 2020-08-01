@@ -1,2 +1,4 @@
 /baselines/seq2seq_attention_copy/BasicSeq2Seq_tune_model_data
 /baselines/seq2seq_attention_copy/AttentionSeq2Seq_tune_model_data
+*/.DS_Store
+.DS_Store

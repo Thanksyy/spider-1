@@ -190,7 +190,7 @@ def sql_key_words():
                 "like",
                 "distinct","*",
                 "join", "on", "as", "select", "from",
-                "visualize", "bin"
+                "visualize", "bin", "bar", "pie", "line", "scatter", '_time', '_weekday'
                ]) # TODO Add Visualization Keywords
     return cnt
 
