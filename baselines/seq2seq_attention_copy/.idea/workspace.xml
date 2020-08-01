@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="95930224-1802-4f22-9154-dcf10367cebd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/datasets/data_final_processed/decode_vocabsaved_embedding_100_target" beforeDir="false" afterPath="$PROJECT_DIR$/data/datasets/data_final_processed/decode_vocabsaved_embedding_100_target" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/pre_process/generate_vocab.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/pre_process/generate_vocab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datasets/data_final_processed/decode_vocabsaved_embedding_100_target" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/datasets/data_final_processed/encode_vocabsaved_embedding_100_source" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/pre_process/generate_vocab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1312">
-              <caret line="183" column="16" selection-start-line="183" selection-start-column="16" selection-end-line="183" selection-end-column="16" />
+            <state relative-caret-position="30">
+              <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
               <folding>
                 <element signature="e#772#782#0" expanded="true" />
               </folding>
@@ -31,10 +31,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/datasets/data_final_processed/encode_vocab.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/datasets/data_final/train.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="136" column="122" lean-forward="true" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="122" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/datasets/data_final_processed/decode_vocab.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="602" column="9" selection-start-line="602" selection-end-line="602" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/pre_process/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-904">
-              <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
+            <state relative-caret-position="418">
+              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -45,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seq2seq/data/vocab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2182">
-              <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state relative-caret-position="-2388">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
               <folding>
                 <element signature="e#614#652#0" expanded="true" />
               </folding>
@@ -55,10 +82,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/seq2seq/data/postproc.py">
+        <entry file="file://$PROJECT_DIR$/seq2seq/contrib/seq2seq/decoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            <state relative-caret-position="448">
+              <caret line="293" column="33" lean-forward="true" selection-start-line="293" selection-start-column="33" selection-end-line="293" selection-end-column="33" />
+              <folding>
+                <element signature="e#1030#1068#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/seq2seq/contrib/experiment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="115" column="55" lean-forward="true" selection-start-line="115" selection-start-column="55" selection-end-line="115" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -76,14 +115,19 @@
       <find>question</find>
       <find>gpu</find>
       <find>print</find>
-      <find>UNK</find>
-      <find>select</find>
       <find>order</find>
       <find>group</find>
       <find>sql_key_words</find>
       <find>bin</find>
-      <find>get_decode_vocab_no_weight</find>
       <find>visua</find>
+      <find>date_address_to</find>
+      <find>select</find>
+      <find>pie</find>
+      <find>propor</find>
+      <find>HIRE_DATE</find>
+      <find>output_vocab_to_txt</find>
+      <find>get_decode_vocab_no_weight</find>
+      <find>UNK</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -127,18 +171,64 @@
             <path>
               <item name="seq2seq_attention_copy" type="b2602c69:ProjectViewProjectNode" />
               <item name="seq2seq_attention_copy" type="462c0819:PsiDirectoryNode" />
-              <item name="BasicSeq2Seq_tune_model_data" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="seq2seq_attention_copy" type="b2602c69:ProjectViewProjectNode" />
               <item name="seq2seq_attention_copy" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="datasets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seq2seq_attention_copy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seq2seq_attention_copy" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="datasets" type="462c0819:PsiDirectoryNode" />
+              <item name="data_final" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seq2seq_attention_copy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seq2seq_attention_copy" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="datasets" type="462c0819:PsiDirectoryNode" />
+              <item name="data_final_processed" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seq2seq_attention_copy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seq2seq_attention_copy" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="my_training_results" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seq2seq_attention_copy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seq2seq_attention_copy" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="my_training_results" type="462c0819:PsiDirectoryNode" />
+              <item name="attn_tune_data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="seq2seq_attention_copy" type="b2602c69:ProjectViewProjectNode" />
               <item name="seq2seq_attention_copy" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="pre_process" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seq2seq_attention_copy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seq2seq_attention_copy" type="462c0819:PsiDirectoryNode" />
+              <item name="seq2seq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seq2seq_attention_copy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seq2seq_attention_copy" type="462c0819:PsiDirectoryNode" />
+              <item name="seq2seq" type="462c0819:PsiDirectoryNode" />
+              <item name="contrib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="seq2seq_attention_copy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="seq2seq_attention_copy" type="462c0819:PsiDirectoryNode" />
+              <item name="seq2seq" type="462c0819:PsiDirectoryNode" />
+              <item name="contrib" type="462c0819:PsiDirectoryNode" />
+              <item name="seq2seq" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -240,12 +330,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596098218405</updated>
-      <workItem from="1596098219871" duration="23846000" />
+      <workItem from="1596098219871" duration="25121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23846000" />
+    <option name="totallyTimeSpent" value="25121000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -267,7 +357,7 @@
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" sideWeight="0.49946466" weight="0.32996973" />
       <window_info anchor="bottom" id="Python Console" weight="0.32996973" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49946466" visible="true" weight="0.35620585" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49946466" visible="true" weight="0.28960645" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.5005353" side_tool="true" weight="0.31584257" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32996973" />
@@ -310,26 +400,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/glove/glove.6B.100d.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/datasets/data_final_processed/encode_vocabsaved_embedding_100_source">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/datasets/data_final_processed/dev/dev_decode.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/datasets/data_final_processed/dev/dev_encode.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AttentionSeq2Seq_tune_model_data/experiment_infer.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -495,27 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/datasets/data_final_processed/encode_vocab.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1520">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/datasets/data_final/train.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="112" column="105" selection-start-line="112" selection-start-column="102" selection-end-line="112" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/datasets/data_final_processed/decode_vocab.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="2544" column="17" lean-forward="true" selection-start-line="2544" selection-start-column="17" selection-end-line="2544" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/seq2seq/models/basic_seq2seq.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-468">
@@ -594,13 +643,6 @@
         <state relative-caret-position="-1430" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seq2seq/data/postproc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BasicSeq2Seq_tune_model_data/output_test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -614,9 +656,6 @@
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BasicSeq2Seq_tune_model_data/output_train.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/BasicSeq2Seq_tune_model_data/experiment.sh">
       <provider selected="true" editor-type-id="text-editor">
@@ -642,33 +681,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seq2seq/data/vocab.py">
+    <entry file="file://$PROJECT_DIR$/BasicSeq2Seq_tune_model_data/output_train.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2182">
-          <caret line="28" column="16" lean-forward="true" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        <state relative-caret-position="-2543">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/my_training_results/attn_tune_data/output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-932">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/datasets/data_final_processed/decode_vocabsaved_embedding_100_target">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/datasets/data_final_processed/decode_vocab.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="602" column="9" selection-start-line="602" selection-end-line="602" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/pre_process/generate_vocab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
           <folding>
-            <element signature="e#614#652#0" expanded="true" />
+            <element signature="e#772#782#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/datasets/data_final_processed/encode_vocab.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/pre_process/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-904">
-          <caret line="93" column="4" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="4" />
+        <state relative-caret-position="418">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/pre_process/generate_vocab.py">
+    <entry file="file://$PROJECT_DIR$/seq2seq/data/postproc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1312">
-          <caret line="183" column="16" selection-start-line="183" selection-start-column="16" selection-end-line="183" selection-end-column="16" />
+        <state relative-caret-position="-58">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seq2seq/data/vocab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2388">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding>
-            <element signature="e#772#782#0" expanded="true" />
+            <element signature="e#614#652#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seq2seq/contrib/seq2seq/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="293" column="33" lean-forward="true" selection-start-line="293" selection-start-column="33" selection-end-line="293" selection-end-column="33" />
+          <folding>
+            <element signature="e#1030#1068#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seq2seq/contrib/experiment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="115" column="55" lean-forward="true" selection-start-line="115" selection-start-column="55" selection-end-line="115" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/datasets/data_final/train.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="136" column="122" lean-forward="true" selection-start-line="136" selection-start-column="18" selection-end-line="136" selection-end-column="122" />
         </state>
       </provider>
     </entry>
