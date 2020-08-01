@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="95930224-1802-4f22-9154-dcf10367cebd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/datasets/data_final/dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/datasets/data_final/dev.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/datasets/data_final/train.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/datasets/data_final/train.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/datasets/data_radn_split/dev_radn.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/datasets/data_radn_split/dev_radn.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/datasets/data_radn_split/train_radn.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/datasets/data_radn_split/train_radn.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/pre_process/generate_vocab.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/pre_process/generate_vocab.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,15 +12,15 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/seq2seq_attention_copy$config_builder.coverage" NAME="config_builder Coverage Results" MODIFIED="1596123996310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/seq2seq_attention_copy$generate_vocab.coverage" NAME="generate_vocab Coverage Results" MODIFIED="1596266361324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data/pre_process" />
+    <SUITE FILE_PATH="coverage/seq2seq_attention_copy$generate_vocab.coverage" NAME="generate_vocab Coverage Results" MODIFIED="1596293119512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data/pre_process" />
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/pre_process/generate_vocab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="159" column="62" lean-forward="true" selection-start-line="159" selection-start-column="62" selection-end-line="159" selection-end-column="62" />
+            <state relative-caret-position="362">
+              <caret line="185" column="19" selection-start-line="185" selection-start-column="19" selection-end-line="185" selection-end-column="19" />
               <folding>
                 <element signature="e#772#782#0" expanded="true" />
               </folding>
@@ -246,12 +241,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596098218405</updated>
-      <workItem from="1596098219871" duration="27450000" />
+      <workItem from="1596098219871" duration="27857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27450000" />
+    <option name="totallyTimeSpent" value="27857000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -267,7 +262,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18576017" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18576017" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -277,7 +272,7 @@
       <window_info anchor="bottom" id="Event Log" sideWeight="0.5005353" side_tool="true" weight="0.31584257" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32996973" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3148335" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3148335" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -681,8 +676,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/pre_process/generate_vocab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="159" column="62" lean-forward="true" selection-start-line="159" selection-start-column="62" selection-end-line="159" selection-end-column="62" />
+        <state relative-caret-position="362">
+          <caret line="185" column="19" selection-start-line="185" selection-start-column="19" selection-end-line="185" selection-end-column="19" />
           <folding>
             <element signature="e#772#782#0" expanded="true" />
           </folding>
