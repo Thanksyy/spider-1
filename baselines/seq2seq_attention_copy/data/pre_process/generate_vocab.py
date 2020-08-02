@@ -202,7 +202,6 @@ def get_decode_vocab_no_weight(infile_group, outfile):
     output_vocab_to_txt(outfile, cnt)
 
 
-
 def get_encode_vocab_no_weight(infile_group, outfile):
     cnt = collections.Counter()
     cnt.update(get_encode_Query(infile_group, None, 'train', False))

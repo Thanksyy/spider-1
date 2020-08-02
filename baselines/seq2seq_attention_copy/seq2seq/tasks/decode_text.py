@@ -72,7 +72,7 @@ def _unk_replace(source_tokens,
       the attention scores.
     mapping: If not provided, an UNK token is replaced with the
       source token that has the highest attention score. If provided
-      the token is insead replaced with `mapping[chosen_source_token]`.
+      the token is instead replaced with `mapping[chosen_source_token]`.
 
   Returns:
     A new `predicted_tokens` array.

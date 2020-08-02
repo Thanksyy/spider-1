@@ -241,7 +241,7 @@ class Seq2SeqModel(ModelBase):
     target_vocab_to_id, target_id_to_vocab, target_word_to_count, _ = \
       vocab.create_vocabulary_lookup_table(self.target_vocab_info.path)
 
-    # Add vocab tables to graph colection so that we can access them in
+    # Add vocab tables to graph collection so that we can access them in
     # other places.
     graph_utils.add_dict_to_collection({
         "source_vocab_to_id": source_vocab_to_id,
