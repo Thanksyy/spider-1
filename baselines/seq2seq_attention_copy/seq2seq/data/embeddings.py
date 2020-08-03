@@ -37,7 +37,16 @@ def get_schema_vocab_mapping():
                 item_original = table_names_original[i]
                 item = table_names[i]
                 table_map[item_original] = item.replace(" ", "_")
+
+    with open('data/datasets/table_map.txt', 'w') as f:
+        f.write(json.dumps(table_map))
+
+    with open('data/datasets/column_map.txt', 'w') as f:
+        f.write(json.dumps(column_map))
+
     return column_map, table_map
+
+
 
 
 
@@ -74,6 +83,7 @@ def get_word_vector(input_string, model, column_map, table_map, separate_word_di
     Given an input string and a gensim Word2Vec model, return a vector
     representation of the string. 
     '''
+    print('get_word_vector: ', input_string)
     if len(input_string) == 0:
         return np.zeros(len(model['the']))
     
@@ -153,4 +163,9 @@ if __name__ == "__main__":
     for k in table_map.keys():
         print (k, table_map[k])
 #         get_word_vector(k, model, column_map, table_map, separate_word_dict)
+
+
+
+
+
 

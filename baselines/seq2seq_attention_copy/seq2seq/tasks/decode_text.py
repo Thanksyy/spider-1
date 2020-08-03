@@ -11,6 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+# -*- coding: utf-8 -*
 """
 Task where both the input and output sequence are plain text.
 """
@@ -86,8 +87,10 @@ def _unk_replace(source_tokens,
       if mapping is not None and chosen_source_token in mapping:
         new_target = mapping[chosen_source_token]
       result.append(new_target)
+      print ('The current token is an UNK, token:', token, ' scores:', scores, 'result target: ', new_target)
     else:
       result.append(token)
+      print ('The current token is not an UNK, the token is:', token)
   return np.array(result)
 
 
@@ -132,7 +135,7 @@ class DecodeText(InferenceTask):
     params.update({
         "delimiter": " ",
         "postproc_fn": "",
-        "unk_replace": False,
+        "unk_replace": True, #TODO
         "unk_mapping": None,
         "print_source": False
     })

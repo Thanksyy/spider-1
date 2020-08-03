@@ -95,7 +95,7 @@ def read_vocab(filename):
 def create_vocabulary_lookup_table(filename, default_value=None):
   """Creates a lookup table for a vocabulary file.
   Args:
-    filename: Path to a vocabulary file containg one word per line.
+    filename: Path to a vocabulary file containing one word per line.
       Each word is mapped to its line number.
     default_value: UNK tokens will be mapped to this id.
       If None, UNK tokens will be mapped to [vocab_size]
@@ -128,6 +128,8 @@ def create_vocabulary_lookup_table(filename, default_value=None):
 
   if default_value is None:
     default_value = special_vocab.UNK
+    # default_value = 'luoyuyu'
+    # print('+++++++++++++++Set Default Value+++++++++++++++')
 
   tf.logging.info("Creating vocabulary lookup table of size %d", vocab_size)
 
