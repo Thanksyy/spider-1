@@ -79,18 +79,41 @@ def _unk_replace(source_tokens,
     A new `predicted_tokens` array.
   """
   result = []
+  i = 0
+  select_index = -1
+  unk_after_select_index = -1
+  group_index = -1
+  replace_index = -1
   for token, scores in zip(predicted_tokens, attention_scores):
+
     if token == "UNK":
+      if i == select_index + 1:
+        unk_after_select_index = i
       max_score_index = np.argmax(scores)
       chosen_source_token = source_tokens[max_score_index]
+      # print('chosen_source_token:',chosen_source_token)
       new_target = chosen_source_token
+      # print(source_tokens)
       if mapping is not None and chosen_source_token in mapping:
         new_target = mapping[chosen_source_token]
       result.append(new_target)
-      print ('The current token is an UNK, token:', token, ' scores:', scores, 'result target: ', new_target)
+      # print ('The current token is an UNK, token:', token, ' scores:', scores, 'result target: ', new_target)
     else:
       result.append(token)
-      print ('The current token is not an UNK, the token is:', token)
+      if token == 'select':
+        select_index = i
+      if unk_after_select_index > -1 and select_index > -1:
+        if token == 'group':
+          group_index = i
+        if token == 'by':
+          if i == group_index + 1:
+            replace_index = group_index + 2
+      # print ('The current token is not an UNK, the token is:', token)
+
+    i += 1
+  # replace unk
+  if replace_index > -1 and unk_after_select_index > -1:
+    result[unk_after_select_index] = result[replace_index] + ' , '
   return np.array(result)
 
 
@@ -154,6 +177,8 @@ class DecodeText(InferenceTask):
     return tf.train.SessionRunArgs(fetches)
 
   def after_run(self, _run_context, run_values):
+    print('_run_context: ', _run_context)
+    print('run_values:', _run_context)
     fetches_batch = run_values.results
     for fetches in unbatch_dict(fetches_batch):
       # Convert to unicode
@@ -171,6 +196,7 @@ class DecodeText(InferenceTask):
       source_len = fetches["features.source_len"]
 
       if self._unk_replace_fn is not None:
+        # print('We slice the attention scores so that we do not')
         # We slice the attention scores so that we do not
         # accidentially replace UNK with a SEQUENCE_END token
         attention_scores = fetches["attention_scores"]

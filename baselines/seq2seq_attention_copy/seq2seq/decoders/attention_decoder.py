@@ -175,7 +175,7 @@ class AttentionDecoder(RNNDecoder):
           seq_dim=1,
           batch_dim=0)
     if self.mode == tf.contrib.learn.ModeKeys.INFER:
-      # print ("type", self.decoder_mask.get_shape(), self.decoder_mask.dtype)
+      print ("type", self.decoder_mask.get_shape(), self.decoder_mask.dtype)
       pred = logits * self.decoder_mask + (tf.reduce_min(logits) - 1) * (1 - self.decoder_mask)
     
       sample_ids = self.helper.sample(
