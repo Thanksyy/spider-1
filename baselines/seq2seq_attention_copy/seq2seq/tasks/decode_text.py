@@ -158,7 +158,7 @@ class DecodeText(InferenceTask):
     params.update({
         "delimiter": " ",
         "postproc_fn": "",
-        "unk_replace": True, #TODO
+        "unk_replace": False, #TODO
         "unk_mapping": None,
         "print_source": False
     })
