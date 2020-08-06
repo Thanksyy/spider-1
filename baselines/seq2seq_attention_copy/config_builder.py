@@ -273,7 +273,7 @@ def generate_training_spec(spec, include_dev=False):
     if "train_steps" in spec:
         training_spec["train_steps"] = spec["train_steps"]
     else:
-        training_spec["train_steps"] = 40000
+        training_spec["train_steps"] = 100000 # 4w->10w
 
     if "save_checkpoints_steps" in spec:
         training_spec["save_checkpoints_steps"] = spec["save_checkpoints_steps"]

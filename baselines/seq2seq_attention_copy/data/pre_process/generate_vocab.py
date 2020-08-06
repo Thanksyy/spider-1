@@ -75,9 +75,6 @@ def get_encode_Query(infile_group, outfile, infile, output=False):
 
 
 def get_mask(infile_group, outfile, infile, vocabfile, output=True):
-    
-    
-    
     _, used_databases, db_dict_rev = get_schema_vocab(infile_group, "schema")
     key_words = sql_key_words()
     infile_name = infile_group[infile]
@@ -181,6 +178,7 @@ def get_schema_vocab(infile_group, infile):
 def sql_key_words():
     cnt = collections.Counter()
     cnt.update(["t"+str(i+1) for i in range(10)])
+    print(cnt)
     cnt.update([".", ",", "(", ")", "in", "not", "and", "between", "or", "where",
                 "except", "union", "intersect",
                 "group", "by", "order", "limit", "having","asc", "desc",
