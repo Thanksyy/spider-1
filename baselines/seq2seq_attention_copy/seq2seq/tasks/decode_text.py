@@ -158,7 +158,7 @@ class DecodeText(InferenceTask):
     params.update({
         "delimiter": " ",
         "postproc_fn": "",
-        "unk_replace": False, #TODO
+        "unk_replace": True, #TODO
         "unk_mapping": None,
         "print_source": False
     })
@@ -177,8 +177,8 @@ class DecodeText(InferenceTask):
     return tf.train.SessionRunArgs(fetches)
 
   def after_run(self, _run_context, run_values):
-    print('_run_context: ', _run_context)
-    print('run_values:', _run_context)
+    # print('_run_context: ', _run_context)
+    # print('run_values:', _run_context)
     fetches_batch = run_values.results
     for fetches in unbatch_dict(fetches_batch):
       # Convert to unicode
