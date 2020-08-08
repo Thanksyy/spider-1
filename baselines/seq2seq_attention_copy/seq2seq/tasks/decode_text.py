@@ -158,7 +158,7 @@ class DecodeText(InferenceTask):
     params.update({
         "delimiter": " ",
         "postproc_fn": "",
-        "unk_replace": True, #TODO
+        "unk_replace": False, #TODO
         "unk_mapping": None,
         "print_source": False
     })
@@ -167,6 +167,7 @@ class DecodeText(InferenceTask):
   def before_run(self, _run_context):
     fetches = {}
     fetches["predicted_tokens"] = self._predictions["predicted_tokens"]
+    # print('Before Run->fetches["predicted_tokens"]:', fetches["predicted_tokens"])
     fetches["features.source_len"] = self._predictions["features.source_len"]
     fetches["features.source_tokens"] = self._predictions[
         "features.source_tokens"]
@@ -180,10 +181,13 @@ class DecodeText(InferenceTask):
     # print('_run_context: ', _run_context)
     # print('run_values:', _run_context)
     fetches_batch = run_values.results
+    # print('\nunbatch_dict(fetches_batch):', unbatch_dict(fetches_batch),'\n')
     for fetches in unbatch_dict(fetches_batch):
+      # print('\nfetches:',fetches,'\n')
       # Convert to unicode
       fetches["predicted_tokens"] = np.char.decode(
           fetches["predicted_tokens"].astype("S"), "utf-8")
+      # print('After Run->fetches["predicted_tokens"]: ', fetches["predicted_tokens"])
       predicted_tokens = fetches["predicted_tokens"]
 
       # If we're using beam search we take the first beam
@@ -196,7 +200,6 @@ class DecodeText(InferenceTask):
       source_len = fetches["features.source_len"]
 
       if self._unk_replace_fn is not None:
-        # print('We slice the attention scores so that we do not')
         # We slice the attention scores so that we do not
         # accidentially replace UNK with a SEQUENCE_END token
         attention_scores = fetches["attention_scores"]

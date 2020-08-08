@@ -117,6 +117,7 @@ class DumpAttention(InferenceTask):
       # Convert to unicode
       fetches["predicted_tokens"] = np.char.decode(
           fetches["predicted_tokens"].astype("S"), "utf-8")
+      # print('After Run->fetches["predicted_tokens"]:', fetches["predicted_tokens"])
       fetches["features.source_tokens"] = np.char.decode(
           fetches["features.source_tokens"].astype("S"), "utf-8")
 
