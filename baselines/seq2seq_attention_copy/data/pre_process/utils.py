@@ -6,7 +6,7 @@ import logging
 infiles_data_final = {'train': '../datasets/data_final/train.json',   
                 'dev':'../datasets/data_final/dev.json',
                 'schema': '../datasets/tables.json',
-                'test': '../datasets/data_final/dev.json' #TODO
+                'test': '../datasets/data_final/test.json' #TODO
 }
 
 infiles_data_radn_split = infiles_data_final
