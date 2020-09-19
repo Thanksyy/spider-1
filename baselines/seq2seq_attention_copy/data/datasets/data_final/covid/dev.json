@@ -1,0 +1,33 @@
+[
+    {
+        "db_id": "covid19",
+        "query": "Visualize Line SELECT date , sum(Daily Cases) FROM covid group by date",
+        "question": "Show the trend of daily new cases with a line chart"
+    },
+    {
+        "db_id": "covid19",
+        "query": "Visualize LINE SELECT date , Confirmed FROM covid",
+        "question": "Tell me the number of total confirmed cases each day with a line chart."
+    },{
+        "db_id": "covid19",
+        "query": "Visualize LINE SELECT date , Confirmed FROM covid",
+        "question": "Draw a line chart that shows the trend of confirmed cases for each day in the world."
+    },{
+        "db_id": "covid19",
+        "query": "Visualize Bar SELECT Country , sum(active cases) from covid group by Country Order by sum(active cases) desc",
+        "question": "How many active cases in each country? Show me a bar chart and sort it by the number of active cases."
+    },{
+        "db_id": "covid19",
+        "query": "Visualize Bar SELECT Country , sum(Confirmed) from covid group by Country Order by sum(Confirmed) desc limit 10",
+        "question": "Give the top-10 countries with the most confirmed cases in a bar chart."
+    },{
+        "db_id": "covid19",
+        "query": "Visualize Bar SELECT country , sum(recovered) from covid group by country",
+        "question": "Plot a bar chart for the number of people are recovered in each country."
+    },
+    {
+        "db_id": "covid19",
+        "query": "Visualize Bar SELECT country , sum(deaths) from covid group by country",
+        "question": "visualize the distribution of deaths cases versus countries as a bar chart."
+    }
+]
